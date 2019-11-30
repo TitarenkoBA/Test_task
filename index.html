@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>About me</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+
+    	<div class="header">
+    		<nav class="topnav" id="myTopnav">
+                <a href="#about_me" class="active">Личная информация</a>
+                <a href="#experience">Опыт</a>
+                <a href="#javascript">JavaScript</a>
+                <a href="#expectations">О себе</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"></i>
+				</a>
+        	</nav>
+    	</div class="header">
+
+    	<div class="main">
+    		<div>
+    			<div class="container">
+    				<form action="">
+		    			<div class="about_me">
+		    				<a name="about_me"></a>
+			            	<h1>Анкета</h1>
+			            	<img src="img/icon-1.png" alt="icon" class="icon">
+			                <h3>Личная информация</h3>
+		                	<input type="text" name="name" class="about_me__input" placeholder="ФИО">
+		                	<select type="date" name="date" class="about_me__input">
+		                		<option>Год рождения</option>
+		                		<option value="1">1</option>
+		                		<option value="2">2</option>
+		                		<option value="3">3</option>
+		                	</select> 
+		                	<input type="text" name="city" class="about_me__input" placeholder="Место проживания">
+		                	<input type="text" name="skype" class="about_me__input" placeholder="Skype">
+		                	<input type="email" name="email" class="about_me__input" placeholder="Email">
+			            </div>
+
+		            	<div class="experience">
+		            		<a name="experience"></a>
+			            	<img src="img/icon-2.png" alt="icon" class="icon">
+			                <h3>Расскажите о своем опыте</h3>
+			                <div>
+			                	<div>
+			                		<input type="checkbox" id="checkbox_1" class="experience__checkbox">
+				                	<label for="checkbox_1">БЭМ/OOCSS</label><br>
+				                	<input type="checkbox" id="checkbox_2" class="experience__checkbox" checked>
+				                	<label for="checkbox_2">Stylus/LESS/SASS</label><br>
+				                	<input type="checkbox" id="checkbox_3" class="experience__checkbox" checked>
+				                	<label for="checkbox_3">Работаю с SVG</label>
+			                	</div>
+			                	<div>
+			                		<input type="checkbox" id="checkbox_4" class="experience__checkbox" checked>
+				                	<label for="checkbox_4">Верстаю семантично</label><br>
+				                	<input type="checkbox" id="checkbox_5" class="experience__checkbox" checked>
+				                	<label for="checkbox_5">ES2015/ES2016</label><br>
+				                	<input type="checkbox" id="checkbox_6" class="experience__checkbox">
+				                	<label for="checkbox_6">Gulp/GRUNT</label>
+			                	</div>
+			                	<div>
+			                		<input type="checkbox" id="checkbox_7" class="experience__checkbox">
+				                	<label for="checkbox_7">Webpack</label><br>
+				                	<input type="checkbox" id="checkbox_8" class="experience__checkbox" checked>
+				                	<label for="checkbox_8">jQuery</label><br>
+				                	<input type="checkbox" id="checkbox_9" class="experience__checkbox" checked>
+				                	<label for="checkbox_9">Использую Git</label>
+			                	</div>
+			                </div>
+		                </div>
+
+		            	<div class="javascript">
+		            		<a name="javascript"></a>
+			            	<img src="img/icon-3.png" alt="icon" class="icon">
+			                <h3>Уровень владения JavaScript</h3>
+			            	<div class="javascript__range">
+			            		<p class="javascript__lable_range">Не владею</p>
+			            		<p class="javascript__lable_range">Использую готовые решения</p>
+			            		<p class="javascript__lable_range">Использую готовые решения и умею их переделывать</p>
+			            		<p class="javascript__lable_range">Пишу сложный JS с нуля</p><br>
+			            		<input type="range"  min="0" max="100" value="50" class="javascript__range_level" oninput="range()">
+			            	</div>
+		            	</div>
+
+		            	<div class="expectations">
+		            		<a name="expectations"></a>
+			            	<img src="img/icon-4.png" alt="icon" class="icon">
+			                <h3>Расскажите о себе</h3>
+			                <p>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+			                <textarea placeholder="Понравилась тем, что у Вас поощряют личностный рост (как мне показалось), что я смогу не только принести пользу Вам, но и вырасти самостоятельно, что смогу изучать и внедрять новые техники и технологии"></textarea>
+			                <input type="submit" class="submit" value="Готово">
+			            </div>
+			        </form>	
+
+	            </div>
+			</div>
+		</div>
+
+    	</div class="main">
+    	<script type="text/javascript" src="js/script.js"></script>
+    </body>
+ </html>
