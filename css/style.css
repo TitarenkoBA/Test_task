@@ -43,10 +43,12 @@ body {
 /* main */
 
 .main {
-	background-image: url('../img/ian-froome-375650.jpg'); 
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top;
+	background: url('../img/ian-froome-375650.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	
 }
 
 .main > div {
